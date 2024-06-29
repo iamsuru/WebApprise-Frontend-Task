@@ -1,0 +1,257 @@
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Header  */
+.nav-contact {
+  background-color: #0253aa;
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: bold !important;
+  color: #246ab5;
+}
+
+.brand-logo {
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.navbar-brand:hover {
+  font-weight: bold !important;
+  color: #246ab5;
+}
+
+.contact-us-btn {
+  background-color: #029696 !important;
+  color: white;
+  border-radius: 20px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+/* slider section  */
+
+img {
+  height: 100vh !important;
+  width: 100vw !important;
+}
+.carousel-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.carousel-text-overlay h5,
+.carousel-text-overlay p {
+  margin: 0;
+}
+
+/* about section  */
+.about-image-container {
+  background-image: url("/images/aboutImage.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.about-text-container {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(90%, -50%);
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 12px rgba(71, 66, 66, 0.121);
+}
+
+@media (max-width: 768px) {
+  .about-image-container {
+    height: auto;
+  }
+  .about-text-container {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-text-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* service section  */
+#service {
+  position: relative;
+  background-image: url("/images/servicesImage.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#service::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(238, 234, 234, 0.855);
+}
+
+.service-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 20vh;
+}
+
+.service-slider-a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.card {
+  box-shadow: 5px 5px 5px 5px rgba(71, 66, 66, 0.121);
+  border: none !important;
+}
+
+.carousel-inner {
+  margin: 0;
+  padding: 0;
+}
+
+#testimonials {
+  padding: 50px 0;
+}
+
+/* Testinomials  */
+
+.review-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.stars {
+  display: inline-block;
+  font-size: 24px;
+  color: #ffd700; /* Star color */
+}
+
+.star {
+  display: inline-block;
+  margin: 0 !important;
+  width: 15px;
+  height: 15px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffd700"><path d="M12 2l2.36 7.18H22l-6.06 4.36 2.36 7.18L12 17.32l-6.3 4.4 2.36-7.18L2 9.18h7.64z"/></svg>');
+  background-size: cover;
+}
+
+.review-content {
+  color: #555;
+  line-height: 1.6;
+}
+
+.review-image {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* work process section  */
+
+#workProcess {
+  position: relative;
+  background-image: url("/images/workProcessSection.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#workProcess::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2663a1da;
+}
+
+.workProcess-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 20vh;
+}
+
+/* contact us section */
+input {
+  border-radius: 25px !important;
+  height: 50px !important;
+  background-color: #cccbcb53 !important;
+}
+
+textarea {
+  border-radius: 30px !important;
+  background-color: #cccbcb53 !important;
+}
+
+.flags {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+/* footer  */
+
+.no-bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  color: black;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
